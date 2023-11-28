@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="js/scripts.js" defer></script>
+    <title>Tabuada</title>
+</head>
+<body class="min-h-screen bg-no-repeat bg-gradient-to-b from-red-500 to-blue-800 p-10">
+
+    <section>
+       <h1 class="text-white text-4xl text-center font-bold">
+        Gerador de Tabuada
+       </h1>
+       <h2  class="text-white text-center">
+        Insira um número e o multiplicador para gerar uma tabuada automaticamente:
+       </h2>
+    </section>
+
+    <main>
+        <form id="formTabuada">
+            <div class="bg-white p-4 rounded-xl mx-auto w-80 h-40 mt-10">
+
+                <div class="flex space-x-5 items-center justify-center">
+                    <div>
+                        <div>
+                            <label class="text-sm font-semibold">
+                                Tabuada do:
+                            </label>
+                        </div>
+                        <input id="numero" type="number" class="rounded-xl w-20 h-10 text-center">
+                    </div>
+                    <div>
+                        <div>
+                            <label class="text-sm font-semibold">
+                                Multiplicar até:
+                            </label>
+                        </div>
+                        <input id="multiplicador" type="number" class="rounded-xl w-20 h-10 text-center">
+                    </div>
+                </div>
+
+                <div class="text-center mt-5  ">
+                    <input type="submit" value="Calcular" class="cursor-pointer w-40 h-10 bg-gray-500 text-white font-semibold rounded-lg hover:bg-gray-400">
+                        
+                    </input>
+                </div>
+            </div> 
+        </form>
+
+        <div>
+            <h1 id="titulo" class="text-white text-3xl text-center font-bold mt-10">
+                Tabuada do Número: <span id="span"></span>
+            </h1>
+        </div>
+
+        <div id="tabela" class="bg-white rounded-xl mx-auto w-80 mt-10  text-center text-gray-500">
+            <p class="h-20 p-4">
+                Informe um número e um multiplicador para calcular uma tabuada...
+            </p> 
+        </div>
+    </main>
+
+</body>
+
+</html>
